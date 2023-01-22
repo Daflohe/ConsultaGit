@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,13 +11,14 @@ import { GitHubSPAComponent } from 'src/components/git-hub-spa/git-hub-spa.compo
         AppComponent,
         GitHubSPAComponent
     ],
-    providers: [],
+    providers: [{provide: ErrorHandler, useClass: AppModule}],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
+        
         
      
     ]

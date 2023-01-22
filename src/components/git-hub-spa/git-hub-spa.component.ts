@@ -49,16 +49,7 @@ console.log(res);
 
 }
 
-/*  avatar_url=this.databe.value.avatar_url;
-  created_at=this.databe.value.created_at;
-  name=this.databe.value.name;
-  location=this.databe.value.location;
-  twitter_username=this.databe.value.twitter_username;
-  blog=this.databe.value.blog;
-  public_repos=this.databe.value.public_repos;
-  followers=this.databe.value.followers;
-  following=this.databe.value.following;
-  */
+
 
 
 }
