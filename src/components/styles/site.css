@@ -102,14 +102,14 @@ button, i {
 
 .card .additional .user-card .round {
 	
-	padding: 40% 10%;
-	margin-left: 10px;
-	margin-top: 20px;
-	margin-bottom: 0px;
+	
+	
+	margin-top: 25px;
 	border-radius: 50%;
-	max-width: 100px;
-	max-height: 100%; 
-	background-image: url(../../assets/icons/foto.jpeg);
+	width: 120px;
+	height: 120px; 
+	/*background-image: url(../../assets/icons/foto.jpeg);
+	*/
 	background-size:cover;
   	background-position:center;
   	background-repeat:no-repeat;	
@@ -117,7 +117,7 @@ button, i {
 
 .card .additional .user-card .level,
 .card .additional .user-card .points {
-	margin-top: 25px;
+	margin-top: 20px;
 	
 	color: #fff;
 	display: inline-block;
@@ -181,8 +181,7 @@ button, i {
 
 .card .additional .stats {
 	font-size: 2rem;
-	display: flex;
-	
+	display: flex;	
 	position: absolute;
 	bottom: 1rem;
 	left: 1rem;

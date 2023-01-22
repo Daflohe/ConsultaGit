@@ -2,15 +2,16 @@
     <body>
         <div class="finder">
             <h1>Find GitHub Users</h1>
-        
+                <form [formGroup]="addressForm" novalidate (ngSubmit)="getUser()">
                   <div class="pseudo-search">
-                  <input :focus type="text">
+                  <input :focus type="text" placeholder="" formControlName="user">
                   
                 
                   <img style="width: 15px;" src="../../../assets//icons/github.png" alt="Github">
-                  <button> <i> <img style="width: 15px;" src="../../../assets//icons/buscar.png" alt="buscar"></i></button>
+                  <button type="submit"> <i> <img style="width: 15px;" src="../../../assets//icons/buscar.png" alt="buscar"></i></button>
                  
                   </div>
+                  </form>
             </div>
         
         <div class="center">
@@ -25,17 +26,17 @@
 
                     <div class="more-info">
                     
-                    <h2>{{user_name}}</h2>
+                    <h2>{{name}}</h2>
                      <div class="coords">
                       
                        <span>
                        <img style="width: 15px;" src="../../assets/icons/localizacion.png" alt="CoordsLogo">
-                       {{user_name}}
+                       {{location}}
                        </span>
                        <span>
 
                        <img style="width: 15px;" src="../../assets/icons/twitter.png" alt="TwitterLogo">
-                       {{user_name}}</span>
+                       {{twitter_username}}</span>
 
                       
 
@@ -45,47 +46,61 @@
                         <a>
                          <img style="width: 15px;" src="../../assets/icons/blogger.png" alt="BlogLogo">
                        <i>
-                        BLOG
+                        {{blog}}
                         </i>
                         </a>
                     </div>  
-                    
-                    </div>
-                   
-                    <div class="stats">
+                     <div class="stats">
                         <div>
                         <div class="title">
-                        {{user_name}}
+                        Repos
                         </div>
                          <img style="width: 45px;" src="../../assets/icons/git.png" alt="BranchLogo">
                         <div class="value">
-                        {{user_name}}
+                        {{public_repos}}
                         </div>
-                        
                         </div>
-                    </div>
-                   <div class="stats">
-                        <div>
+                         <div>
                         <div class="title">
-                        {{user_name}}
+                        Followers
                         </div>
                          <img style="width: 45px;" src="../../assets/icons/followers.png" alt="BranchLogo">
                         <div class="value">
-                        {{user_name}}
+                        {{followers}}
                         </div>
                         
                         </div>
+                         <div>
+                        <div class="title">
+                        Following
+                        </div>
+                         <img style="width: 45px;" src="../../assets/icons/following.png" alt="BranchLogo">
+                        <div class="value">
+                        {{following}}
+                        </div>
+                        
+                        </div>
+
+
                     </div>
+
+                    
+                    </div>
+                   
+                  
+
                     <div class="user-card">
                         <div class="level">
                         
-                            {{user_name}}
+                            {{login}}
                             </div>
                         
-                        <div class="round"></div>
+                        
+                         <img class="round"   src={{avatar_url}} alt="UserPic">
+                       
                         
                         <div class="points">
-                            {{user_name}}
+                            {{created_at}}
                         </div>   
                                   
 
